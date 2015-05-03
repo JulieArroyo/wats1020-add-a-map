@@ -2,12 +2,41 @@
    Author's custom styles
    ========================================================================== */
 
+
+body{
+	font-family: 'Courgette', cursive;
+}
+
+.carousel-inner > .item > img ,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	height:300px;
+	margin:auto;
+}
+.carousel .item{
+	height:300
+}
+
+#map { height: 180px; }
 #map-container { height: 180px; }
 
+#stats{
+	background-image: url();
+	width:100%;
+}
+dt{
+	font-weight:bold;
+	font-size:20px;
+	color:black;
+}
+h2{
+	font-weight:bold;
+	color:black;
+}
 
-
-
-
+#links{
+	padding-top:30px;
+}
 
 
 
