@@ -6,6 +6,9 @@
 body{
 	font-family: 'Courgette', cursive;
 }
+.tabpanel{
+	margin:20px;
+}
 
 .carousel-inner > .item > img ,
 .carousel-inner > .item > a > img {
