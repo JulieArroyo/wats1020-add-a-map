@@ -53,10 +53,9 @@
         </div><!--navbar-header-->
 		  
 		  
-		<div role="tabpanel">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">	
-          <ul class="nav navbar-nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -65,21 +64,18 @@
                 <li><a href="#stats" >Stats</a></li>
               </ul>
             </li>
-            <li role="presentation"><a href="#map" aria-controls="map" role="tab" data-toggle="tab">Map</a></li>
-            <li role="presentation"><a href="#links" aria-controls="links" role="tab" data-toggle="tab">Links</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#links">Links</a></li>
           </ul>
        </div><!--collapse navar-collapse-->
-	</div><!--tab panel-->
   </div><!--container-fluid-->
 </nav>
 		   	
 		
-		<!-- Tab panes -->
-  	<div class="tab-content">
+	
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-		<div role="tabpanel" class="tab-pane active" id="home" >
         <h1 >Mt. Ranier Information</h1>
         <!-- TODO: Create an HTML structure that will trigger the Bootstrap
                    carousel feature. http://getbootstrap.com/javascript/#carousel
@@ -102,33 +98,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="img/Mount_Rainier_sunset_and_clouds.jpg" alt="sunset" wi>
+      <img src="img/Mount_Rainier_sunset_and_clouds.jpg" alt="sunset">
       <div class="carousel-caption">
         ...
       </div>
     </div><!--item active-->
 	  
     <div class="item">
-      <img src="Goat_peak.jpg" alt="meadow">
+      <img src="img/Goat_peak.jpg" alt="meadow">
       <div class="carousel-caption">
         ...
       </div>
 	  </div><!--item-->
-		
-		<div class="item">
-      <img src="Skookum_flats.jpg" alt="flat">
-      <div class="carousel-caption">
-        ...
-      </div>
-	  </div><!--item-->
-			   
-		<div class="item">
-      <img src="img/Mount_Rainier_-_Paradice_meadow_in_July_03.jpg" alt="lake">
-      <div class="carousel-caption">
-        ...
-      </div>
-			
-	  </div><!--item-->
+	
    </div><!--myCarousel-->
 
   <!-- Controls -->
@@ -141,7 +123,6 @@
     <span class="sr-only">Next</span>
   </a>
 			
-		 </div><!--tab-->
       </div><!--jumbotron-->
     </div><!--container-->
 
@@ -152,7 +133,7 @@
         &mdash; John Muir, Naturalist
       </blockquote>
       
-	<div id="about" role="tabpanel" class="tab-pane" >
+	<div id="about" role="tabpanel">
 
       <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
             http://getbootstrap.com/javascript/#tabs
@@ -160,10 +141,41 @@
             You will need to add HTML structure to show each of the divs below
             as a unique tab. -->
 		  <!-- Nav tabs -->
+		
+	<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+</div>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
         <div id="description">
           <h2>About</h2>
-          <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
+          <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>)  is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
         </div><!--description-->
 		
 		
@@ -229,14 +241,14 @@
         </div><!--tab panel-->
       </div><!--container-->
 
-	<div role="tabpanel" class="tab-pane" id="map">
+	<div  id="map">
         <h2>Map</h2>
         <!-- TODO: Use Leaflet.js to add a map showing Mt. Rainier's location
                     http://leafletjs.com/examples/quick-start.html -->
         <div id="map-container"></div>
 	</div>
 		
-	<div role="tabpanel" class="tab-pane" id="links">
+	<div id="links">
         <h2>Links</h2>
         <p class="lead">Learn more about Mt. Rainier by visiting these websites:</p>
         <ul class="links-list">
